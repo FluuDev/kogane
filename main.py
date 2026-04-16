@@ -246,4 +246,4 @@ def run_flask():
 
 threading.Thread(target=run_flask, daemon=True).start()
 
-bot.run(os.getenv("MTQ5Mzc0MzA4OTExMjU4NDE5Mg.GH8YG5.mMme43TJK4m_dqtkbuMZDUKeWh_qaR2M5FX8Sg"))
+bot.run(os.getenv("DISCORD_TOKEN"))
