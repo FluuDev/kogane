@@ -242,8 +242,10 @@ async def balance(ctx):
     await ctx.send(f"balanced roles! moved {moved} ppl.")
 
 def run_flask():
-    app.run(host="0.0.0.0", port=8156)
+    app.run(host="0.0.0.0", port=10000)
 
-threading.Thread(target=run_flask, daemon=True).start()
+if __name__ == "__main__":
+    threading.Thread(target=run_flask).start()
+    bot.run(os.getenv("DISCORD_TOKEN"))
 
 bot.run(os.getenv("DISCORD_TOKEN"))
